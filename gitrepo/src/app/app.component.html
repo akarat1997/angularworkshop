@@ -1,1 +1,24 @@
-<h3>Workshop 2</h3>
+<h3 class="text-center">Workshop 2</h3>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>รหัสสินค้า</th>
+        <th>ชื่อสินค้า</th>
+        <th>ราคา</th>
+        <th>สั่งซื้อ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let p of productList">
+        <td>{{p.pId}}</td>
+        <td>{{p.pname}}</td>
+        <td>{{p.pCost}}</td>
+        <td>
+            <button type="button" class="btn btn-primary btn-sm">เลือกสินค้า</button>
+        </td>
+      </tr>
+      <tr>
+      </tr>
+    </tbody>
+  </table>
+  
